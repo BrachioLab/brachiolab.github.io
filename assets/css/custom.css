@@ -49,6 +49,12 @@
 
 
 @media screen and (max-width: 736px) {
+	/* Re-scale image to match increased font size */
+	#top .image {
+	    width: 18em;
+	    height: 18em;
+	}
+
 	/* Resize welcome header	*/
 	h1 { 
 		font-size: 2.2em;
@@ -66,8 +72,12 @@
 
 	/* Slightly larger navbar */
 	#nav {
-		height: 60px;
-		line-height: 60px;
+		height: 45px;
+		line-height: 45px;
+	}
+	/* but make sure the font size fits */
+	#nav a {
+		font-size: 0.8em;
 	}
 }
 
