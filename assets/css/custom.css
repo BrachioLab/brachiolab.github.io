@@ -51,8 +51,8 @@
 @media screen and (max-width: 736px) {
 	/* Re-scale image to match increased font size */
 	#top .image {
-	    width: 18em;
-	    height: 18em;
+	    width: 14em;
+	    height: 14em;
 	}
 
 	/* Resize welcome header	*/
@@ -78,6 +78,18 @@
 	/* but make sure the font size fits */
 	#nav a {
 		font-size: 0.8em;
+	}
+}
+
+
+@media screen and (max-width: 350px) {
+	#top .image {
+	    width: 12em;
+	    height: 12em;
+	}
+
+	#nav a {
+		font-size: 0.6em;
 	}
 }
 
