@@ -1,17 +1,70 @@
-#research article {
+/* Make papers and people the same height */
+#research article, #people section {
 	min-height: 100%;
-}
+} 
 
+
+/* news	*/
 #top section p {
 	font-size: 1.25em;
 	line-height: 1.5em;
 }
 
+
+/* Custom font sizing for ipad  */
+@media screen and (max-width: 1280px) {
+
+	/* Re-scale image to match increased font size */
+	#top .image {
+	    width: 20em;
+	    height: 20em;
+	}
+
+	/* Make default font size much larger	*/
+	body, input, textarea, select  {
+		font-size: 14pt;
+	}
+
+	/* Resize welcome header	*/
+	h1 { 
+		font-size: 2.5em;
+	}
+
+	/* Blurb font size	*/
+	#top p {
+		font-size: 1.2em;
+	}
+
+	/* News padding	*/
+	#top section {
+		padding: 1.5em 1em 1.75em 1em;
+	}
+
+	/* News font size	*/
+	#top section p {
+		font-size: 1.0em;
+		line-height: 1.5em;
+	}
+}
+
+
 @media screen and (max-width: 736px) {
+	/* Resize welcome header	*/
+	h1 { 
+		font-size: 2.2em;
+	}
+
+	/* News font size */
 	#top section p {
 		font-size: 1em;
 	}
+
+	/* Base font size much larger */
+	body, input, textarea, select {
+		font-size: 16pt;
+	}
 }
+
 
 #research p a {
 	color: inherit;
