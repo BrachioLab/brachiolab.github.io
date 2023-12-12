@@ -21,9 +21,8 @@ $.get('/assets/data/papers.yml').done(
 				$article.append($("<h3>").append(
 					$("<a>", {href: link}).text(paper["title"])
 				));
-
 				var $p = $("<p>").text(paper["authors"])
-				if (paper["conference"]){
+				if (paper["short"]){
 					// console.log(paper["short"]);
 					$p.prepend($("<em>").html(paper["short"] + "<br />"));
 				} 
