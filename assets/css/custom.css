@@ -72,7 +72,8 @@
 }
 
 
-#research p a {
+/* Make links inherit color */
+#research p a, #people p a {
 	color: inherit;
 }
 

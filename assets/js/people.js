@@ -16,6 +16,13 @@ $.get('/assets/data/group.yml').done(
 
 			var $h3 = $("<h3>").append($("<a>", {href: person["url"]}).text(person["name"]));
 			var $p = $("<p>").text(person["role"]);
+
+			console.log(person["coadvisor"])
+			if (person["coadvisor"]) {
+				$p.append("<br> Co-advised with ")
+				$p.append($("<a>", {href: person["coadvisor_url"]}).text(person["coadvisor"]))
+			}
+
 			$section.append($span, $h3, $p);
 			$div.append($section);
 			$row.append($div);

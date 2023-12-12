@@ -1,7 +1,7 @@
 $.get('/assets/data/papers.yml').done(
 	function (data) {
 		var papers = jsyaml.load(data);
-		console.log(papers);
+		// console.log(papers);
 		var $header = $("#research div.container header");
 
 		// var $row = $("<div>", {class: "row aln-center"});
@@ -10,7 +10,7 @@ $.get('/assets/data/papers.yml').done(
 			var papers_by_year = papers[yid]["papers"]
 			for (pid in papers_by_year){
 				var paper = papers_by_year[pid];
-				console.log(paper)
+				// console.log(paper)
 				var $div = $("<div>", {class: "col-4 col-6-medium col-12-small"});
 				var $article = $("<article>", {class: "box style1"});
 
@@ -24,7 +24,7 @@ $.get('/assets/data/papers.yml').done(
 
 				var $p = $("<p>").text(paper["authors"])
 				if (paper["conference"]){
-					console.log(paper["short"]);
+					// console.log(paper["short"]);
 					$p.prepend($("<em>").html(paper["short"] + "<br />"));
 				} 
 
