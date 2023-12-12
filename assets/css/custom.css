@@ -63,6 +63,12 @@
 	body, input, textarea, select {
 		font-size: 16pt;
 	}
+
+	/* Slightly larger navbar */
+	#nav {
+		height: 60px;
+		line-height: 60px;
+	}
 }
 
 
