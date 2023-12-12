@@ -7,6 +7,12 @@
 	line-height: 1.5em;
 }
 
+@media screen and (max-width: 736px) {
+	#top section p {
+		font-size: 1em;
+	}
+}
+
 #research p a {
 	color: inherit;
 }
