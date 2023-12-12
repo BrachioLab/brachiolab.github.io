@@ -1,0 +1,30 @@
+- name: Eric Wong
+  url: https://www.cis.upenn.edu/~exwong/
+  photo: /assets/img/portrait/eric.jpeg
+  coadvisor: 
+  coadvisor_url: 
+  role: "Faculty"
+- name: Shreya Havaldar
+  url: https://shreyahavaldar.com/
+  photo: /assets/img/portrait/shreya.jpeg
+  coadvisor: Lyle Ungar
+  coadvisor_url: https://www.cis.upenn.edu/~ungar/
+  role: "PhD Student"
+- name: Weiqiu You
+  url: https://fallcat.github.io/
+  photo: /assets/img/portrait/weiqiu.jpeg
+  coadvisor: 
+  coadvisor_url: 
+  role: "PhD Student"
+- name: Anton Xue
+  url: https://antonxue.github.io/
+  photo: /assets/img/portrait/anton.jpeg
+  coadvisor: Rajeev Alur
+  coadvisor_url: https://www.cis.upenn.edu/~alur/
+  role: "PhD Student"
+- name: Chaehyeon Kim
+  url: https://chaehyeon.kim/
+  photo: /assets/img/portrait/chaehyeon.jpeg
+  coadvisor: 
+  coadvisor_url: 
+  role: "PhD Student"

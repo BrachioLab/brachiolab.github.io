@@ -1,0 +1,12 @@
+#research article {
+	min-height: 100%;
+}
+
+#research p a {
+	color: inherit;
+}
+
+.spacer { 
+	padding-left:5px;
+	padding-right:5px;
+}
