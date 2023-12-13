@@ -7,7 +7,7 @@ $.get('/assets/data/group.yml').done(
 		var $row = $("<div>", {class: "row"});
 		for (i in people){
 			var person = people[i];
-			var $div = $("<div>", {class: "col-3 col-4-medium col-6-small"});
+			var $div = $("<div>", {class: "col-3 col-4-medium col-12-small"});
 			var $section = $("<section>", {class: "box style1"});
 
 			var $span = $("<span>", {class: "featured image"}); 
