@@ -1,4 +1,4 @@
-$.get('/assets/data/papers.yml').done(
+$.get('/data/papers.yml').done(
 	function (data) {
 		var papers = jsyaml.load(data);
 		// console.log(papers);
@@ -10,6 +10,11 @@ $.get('/assets/data/papers.yml').done(
 			var papers_by_year = papers[yid]["papers"]
 			for (pid in papers_by_year){
 				var paper = papers_by_year[pid];
+				// skip external papers
+				if (paper["external"]) {
+					continue;
+				}
+
 				// console.log(paper)
 				var $div = $("<div>", {class: "col-4 col-6-medium col-12-small"});
 				var $article = $("<article>", {class: "box style1"});

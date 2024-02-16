@@ -1,4 +1,4 @@
-$.get('/assets/data/group.yml').done(
+$.get('/data/group.yml').done(
 	function (data) {
 		var people = jsyaml.load(data);
 		var $header = $("#people div.container header");
