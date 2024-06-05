@@ -1,5 +1,5 @@
 /* Make papers and people the same height */
-#research article, #people section {
+#research article, #people section, #datasets article {
 	min-height: 100%;
 } 
 
@@ -102,4 +102,46 @@
 .spacer { 
 	padding-left:5px;
 	padding-right:5px;
+}
+
+@media screen and (min-width: 980px) {
+	#datasets {
+		.box.style2 .image {
+			position: relative;
+			left: 1em;
+			top: 1em;
+			margin: -2em 0 1.5em -2em;
+			width: auto;
+		}
+		.box {
+			padding: 1em;
+		}
+		/* img {
+			padding: 1.1em;
+		} */
+		/* img {
+			width: 139px;
+		} */
+		article {
+			/* padding: 15px; */
+			/* width: 184px; */
+			/* text-align: center; */
+		}
+		h3 { 
+			font-size: 0.8em;
+			/* margin-left: -15px; */
+			/* text-align: center; */
+			/* min-width: 184px; */
+		}
+		/* padding: 15px; */
+	}
+}
+
+#datasets {
+	.box.style2 h3 {
+		margin-bottom: 0em;
+	}
+	.box {
+		/* padding-bottom: 0.75em; */
+	}
 }
