@@ -145,3 +145,9 @@
 		/* padding-bottom: 0.75em; */
 	}
 }
+
+.center {
+	display: flex;
+    align-items: center;
+    justify-content: center
+}
