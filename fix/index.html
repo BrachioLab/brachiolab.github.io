@@ -11,6 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<link rel="stylesheet" href="/assets/css/custom.css" />
+
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -36,29 +39,8 @@
 					<div class="row">
 						<div class="col-2 col-4-medium col-6-small">
 							<article class="box style2">
-								<a href="#surgery" class="image featured"><img src="images/surgery_blur.png" alt=""></a>
-								<h3><a href="#surgery">Surgery</a></h3>
-								<!-- <p>Ornare nulla proin odio consequat.</p> -->
-							</article>
-						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2">
 								<a href="#massmaps" class="image featured"><img src="images/maps.png" alt=""></a>
 								<h3><a href="#massmaps"><span>Mass Maps</a></h3>
-								<!-- <p>Ornare nulla proin odio consequat.</p> -->
-							</article>
-						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2">
-								<a href="#polite" class="image featured"><img src="images/politeness_cropped.png" alt=""></a>
-								<h3><a href="#polite">Polite&#8203;ness</a></h3>
-								<!-- <p>Ornare nulla proin odio consequat.</p> -->
-							</article>
-						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2">
-								<a href="#chestxray" class="image featured"><img src="images/chest_gray.png" alt=""></a>
-								<h3><a href="#chestxray">Chest X-Ray</a></h3>
 								<!-- <p>Ornare nulla proin odio consequat.</p> -->
 							</article>
 						</div>
@@ -71,8 +53,29 @@
 						</div>
 						<div class="col-2 col-4-medium col-6-small">
 							<article class="box style2">
+								<a href="#polite" class="image featured"><img src="images/politeness_cropped.png" alt=""></a>
+								<h3><a href="#polite">Polite&#8203;ness</a></h3>
+								<!-- <p>Ornare nulla proin odio consequat.</p> -->
+							</article>
+						</div>
+						<div class="col-2 col-4-medium col-6-small">
+							<article class="box style2">
 								<a href="#emotion" class="image featured"><img src="images/emotions_cropped.png" alt=""></a>
 								<h3><a href="#emotion">Emotion</a></h3>
+								<!-- <p>Ornare nulla proin odio consequat.</p> -->
+							</article>
+						</div>
+						<div class="col-2 col-4-medium col-6-small">
+							<article class="box style2">
+								<a href="#chestxray" class="image featured"><img src="images/chest_gray.png" alt=""></a>
+								<h3><a href="#chestxray">Chest X-Ray</a></h3>
+								<!-- <p>Ornare nulla proin odio consequat.</p> -->
+							</article>
+						</div>
+						<div class="col-2 col-4-medium col-6-small">
+							<article class="box style2">
+								<a href="#surgery" class="image featured"><img src="images/surgery_blur.png" alt=""></a>
+								<h3><a href="#surgery">Surgery</a></h3>
 								<!-- <p>Ornare nulla proin odio consequat.</p> -->
 							</article>
 						</div>
@@ -91,22 +94,6 @@
 				</div>
 			</article>
 			
-			<article id="surgery" class="wrapper style2">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/surgery_groups.png" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Cholecystectomy <strong>Surgery</strong></h1>
-							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-					</div>
-				</div>
-			</article>
-			
 			<article id="massmaps" class="wrapper style3">
 				<div class="container">
 					<div class="row">
@@ -114,27 +101,70 @@
 							<header>
 								<h1>Cosmological <strong>Mass Maps</strong></h1>
 							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Astronomers seek to use mass maps collected via telescopes to infer cosmological parameters governing the initial state of the universe, such as energy density \((\Omega_m)\) and matter fluctuations \((\sigma_8)\). While deep networks can predict well at this task, explanations thereof can potentially draw attention to new discoveries if they are understandable to cosmologists. Explanations of mass map predictions that are aligned with cosmological structures (e.g. voids and clusters) can potentially advance our understanding of the formation of the universe.</p>
+							<p>
+								<a href="" class="button small scrolly">Colab</a>&emsp;
+								<a href="https://huggingface.co/datasets/BrachioLab/massmaps-cosmogrid-100k" class="button small scrolly">Data</a>
+							</p>
 						</div>
-						<div class="col-4 col-5-large col-12-medium">
+						<div class="col-4 col-5-large col-12-medium center">
 							<span class="image fit"><img src="images/maps_groups.png" alt="" /></span>
 						</div>
 					</div>
 				</div>
 			</article>
-			
+			<article id="supernova" class="wrapper style2">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium center">
+							<span class="image fit"><img src="/assets/img/logo.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1><strong>Supernova</strong> Identification</h1>
+							</header>
+							<p>The Legacy Survey of Space and Time uses telescopes to search the universe for rare and new astronomical phenomena, such as exploding supernova. Given the size of the universe and the limited view of a telescope, observation schedules need to focus on periods of activity that correspond to astronomical activity to not squander telescope resources. While deep learning models can accurately classify supernova from light observations, aligning explanations with wavelength structures can potentially help astrophysicists in characterizing new and different supernova. </p>
+							<p>
+								<a href="" class="button small scrolly">Colab</a>&emsp;
+								<a href="https://huggingface.co/datasets/BrachioLab/supernova-timeseries" class="button small scrolly">Data</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
 
 			<article id="polite" class="wrapper style2">
 				<div class="container">
 					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
+						<div class="col-5 col-6-large col-12-medium center">
 							<span class="image fit"><img src="images/politeness_groups.png" alt="" /></span>
 						</div>
-						<div class="col-8 col-7-large col-12-medium">
+						<div class="col-7 col-6-large col-12-medium">
 							<header>
 								<h1>Multilingual <strong>Politeness</strong></h1>
 							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Why are certain phrases polite in one language and rude in another? Understanding the nuances of politeness across languages can aid in cross-cultural understanding and communication. To this end, communication and psychology research has identified multilingual lexical categories that can capture different aspects of politeness. Aligning explanations of politeness with lexical categories that are common across different languages can help people from different backgrounds understand each other.</p>
+							<a href="" class="button small scrolly">Colab</a>&emsp;
+							<a href="https://huggingface.co/datasets/BrachioLab/" class="button small scrolly">Data</a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article id="emotion" class="wrapper style3">
+				<div class="container">
+					<div class="row">
+						<div class="col-7 col-6-large col-12-medium">
+							<header>
+								<h1><strong>Emotion</strong> detection</h1>
+							</header>
+							<p>Understanding the emotion behind language is a critical component of systems like chatbots that interact with human users. Psychology researchers traditionally explain emotion via the <em>circumplex model of affect</em>, which quantifies emotion with respect to two axes of arousal (i.e. magnitude of intensity) and valence (how negative or positive). Explanations for emotions in language that are aligned with the circumplex model can help guide systems towards more empathetic and adaptable interactions with people.</p>
+							<p>
+								<a href="" class="button small scrolly">Colab</a>&emsp;
+								<a href="" class="button small scrolly">Data</a>
+							</p>
+						</div>
+						<div class="col-5 col-6-large col-12-medium center">
+							<span class="image fit"><img src="images/emotions_groups.png" alt="" /></span>
 						</div>
 					</div>
 				</div>
@@ -147,46 +177,40 @@
 							<header>
 								<h1><strong>Chest X-Ray</strong> Pathologies</h1>
 							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Medical imaging is a widely used tool for diagnosing problems in the chest. These X-ray images provide doctors with a view into the internal structures and organs, from which diagnoses are made. While deep learning models have seen success in predicting from raw X-ray data, aligning explanations of pathology predictions with bone structures and organs can help doctors better understand the resulting diagnosis.</p>
+							<p>
+								<a href="" class="button small scrolly">Colab</a>&emsp;
+								<a href="https://huggingface.co/datasets/BrachioLab/chestx" class="button small scrolly">Data</a>
+							</p>
 						</div>
-						<div class="col-4 col-5-large col-12-medium">
+						<div class="col-4 col-5-large col-12-medium center">
 							<span class="image fit"><img src="images/chest_groups.png" alt="" /></span>
 						</div>
 					</div>
 				</div>
 			</article>
-			
-			<article id="supernova" class="wrapper style2">
+			<article id="surgery" class="wrapper style2">
 				<div class="container">
 					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="/assets/img/logo.png" alt="" /></span>
+						<div class="col-4 col-5-large col-12-medium center">
+							<span class="image fit"><img src="images/surgery_groups.png" alt="" /></span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
-								<h1><strong>Supernova</strong> Identification</h1>
+								<h1>Cholecystectomy <strong>Surgery</strong></h1>
 							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Cholecystectomy surgey, otherwise known as gallbladder removal, is one of the most common elective abdominal surgeries in the US. AI assistants can potentially identify safe/unsafe regions, which can reduce the risk of major complications like bile duct injuries that cost the US healthcare system $1B annually. To effectively communicate with surgeons, explanations of safety need to aligned with anatomical structures that surgeons use to judge safety (i.e. the <em>critical view of safety</em>). </p>
+							<p>
+								<a href="" class="button small scrolly">Colab</a>&emsp;
+								<a href="https://huggingface.co/datasets/BrachioLab/cholecystectomy" class="button small scrolly">Data</a>
+							</p>
 						</div>
 					</div>
 				</div>
 			</article>
 			
-			<article id="emotion" class="wrapper style3">
-				<div class="container">
-					<div class="row">
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1><strong>Emotion</strong> detection</h1>
-							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="/assets/img/logo.png" alt="" /></span>
-						</div>
-					</div>
-				</div>
-			</article>
+
+			
 
 		<!-- Contact -->
 			<article id="contact" class="wrapper style4">
