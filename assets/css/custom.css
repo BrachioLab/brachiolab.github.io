@@ -91,6 +91,7 @@
 	#nav a {
 		font-size: 0.6em;
 	}
+
 }
 
 
@@ -146,8 +147,27 @@
 	}
 }
 
+@media screen and (min-width: 980px) {
+	.center {
+		order: -1;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.center {
+		order: -1;
+	}
+	.center img {
+		max-height: 350px;
+		width: auto;
+		max-width: 100%;
+		display: inline; 
+		/* max-height: 100%; */
+	}
+}
+
 .center {
 	display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
