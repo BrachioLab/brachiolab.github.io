@@ -20,78 +20,83 @@
 
 		<!-- Nav -->
 			<nav id="nav">
-				<ul class="container">
-					<li><a href="/#home">Brachio Lab</a></li>
-					<li><a href="/#people">People</a></li>
-					<li><a href="/#research">Research</a></li>
-					<!-- <li><a href="#contact">Contact</a></li> -->
+				<ul class="nav-container">
+					<li><a href="https://brachiolab.github.io/#home">Brachio Lab</a></li>
+					<li><a href="https://brachiolab.github.io/#people">Team</a></li>
+					<li><a href="https://brachiolab.github.io/#research">Research</a></li>
+					<li><a href="https://debugml.github.io/">Blog<img class="inline-icon"src="images/ExternalLink_Icon.svg"/></a></li>
 				</ul>
 			</nav>
 
+			<article id="intro">
+				<div class="top-container">
+						<img class="top-image" src="images/FIX_Logo.svg" alt="FIX Logo" />
+						<div class="top-text">
+							<header>
+								<h1>FIX: <strong>Features </strong> Interpretable to eXperts</h1>
+							</header>
+							<p>
+								A benchmark for extracting features that are interpretable to real-world experts, ranging from doctors performing gall bladder surgery to cosmologists studying supernovae.</p>
+							<div class="button-container">
+								<a href="https://arxiv.org/abs/2409.13684"><button class="button primary">FIX Paper</button></a> <a href="https://github.com/BrachioLab/exlib/tree/main/fix"><button class="button primary">Github</button></a> 
+							</div>
+						</div>
+				</div>
+			</article>
 
-			<article id="datasets" class="wrapper style1">
+			<article id="datasets">
 				<div class="container">
-					<header>
-						<h1>FIX: Features Interpretable to eXperts</h1>
-						<p>A benchmark for extracting features that are interpretable to real-world experts, ranging from doctors performing gall bladder surgery to cosmologists studying supernovae.</p>
-						<!-- <a href="" class="button large scrolly">Paper</a>
-						<a href="https://github.com/brachiolab/exlib" class="button large scrolly">Github</a> -->
-					</header>
-					<div class="row">
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#massmaps';" style="cursor: pointer;">
+					<div class="divider">
+						<hr class = "hr-divider"><img class="icon" src="assets/img/Team_Icon.svg"/><h2 class = "divider-text">Datasets</h2><hr class = "hr-divider">
+					</div>
+					<p>
+						Scroll down or click a setting to learn more, explore these settings in ready-to-use notebooks, and easily download these datasets from Huggingface to join the search for interpretable features! 
+						 <!-- Access datasets and evaluate your features with 
+						<code>pip install exlib</code> -->
+					</p>
+					<div class="thumbnail-container">
+						<div class="thumbnail-card">
+							<article onclick="location.href='#massmaps';" style="cursor: pointer;">
 								<a href="#massmaps" class="image featured"><img src="images/maps.png" alt=""></a>
 								<h3><a href="#massmaps"><span>Mass Maps</a></h3>
 								<!-- <p>Ornare nulla proin odio consequat.</p> -->
 							</article>
 						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#supernova';" style="cursor: pointer;">
+						<div class="thumbnail-card">
+							<article onclick="location.href='#supernova';" style="cursor: pointer;">
 								<a href="#supernova" class="image featured"><img src="images/supernova.png" alt=""></a>
 								<h3><a href="#supernova">Super&#8203;nova</a></h3>
 								<!-- <p>Ornare nulla proin odio consequat.</p> -->
 							</article>
 						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#polite';" style="cursor: pointer;">
+						<div class="thumbnail-card">
+							<article onclick="location.href='#polite';" style="cursor: pointer;">
 								<a href="#polite" class="image featured"><img src="images/politeness_cropped.png" alt=""></a>
 								<h3><a href="#polite">Polite&#8203;ness</a></h3>
 								<!-- <p>Ornare nulla proin odio consequat.</p> -->
 							</article>
 						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#emotion';" style="cursor: pointer;">
+						<div class="thumbnail-card">
+							<article onclick="location.href='#emotion';" style="cursor: pointer;">
 								<a href="#emotion" class="image featured"><img src="images/emotions_cropped.png" alt=""></a>
 								<h3><a href="#emotion">Emotion</a></h3>
 								<!-- <p>Ornare nulla proin odio consequat.</p> -->
 							</article>
 						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#chestxray';" style="cursor: pointer;">
+						<div class="thumbnail-card">
+							<article onclick="location.href='#chestxray';" style="cursor: pointer;">
 								<a href="#chestxray" class="image featured"><img src="images/chest_gray.png" alt=""></a>
 								<h3><a href="#chestxray">Chest X-Ray</a></h3>
-								<!-- <p>Ornare nulla proin odio consequat.</p> -->
 							</article>
 						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#surgery';" style="cursor: pointer;">
+						<div class="thumbnail-card">
+							<article onclick="location.href='#surgery';" style="cursor: pointer;">
 								<a href="#surgery" class="image featured"><img src="images/surgery_blur.png" alt=""></a>
 								<h3><a href="#surgery">Surgery</a></h3>
-								<!-- <p>Ornare nulla proin odio consequat.</p> -->
+								
 							</article>
 						</div>
 					</div>
-					<footer>
-						<p>
-							Scroll down or click a setting to learn more, explore these settings in ready-to-use notebooks, and easily download these datasets from Huggingface to join the search for interpretable features! 
- 							<!-- Access datasets and evaluate your features with 
-							<code>pip install exlib</code> -->
-						</p>
-						<div class="row">
-							<div class="col-6 col-6-medium col-6-small" style="text-align: right;"><a href="https://arxiv.org/abs/2409.13684" class="button large scrolly">FIX Paper</a></div>
-							<div class="col-6 col-6-medium col-6-small" style="text-align: left;"><a href="https://github.com/BrachioLab/exlib/tree/main/fix" class="button large scrolly">Github</a></div>
-						</div>
-					</footer>
 				</div>
 			</article>
 			
@@ -219,45 +224,17 @@
 
 			
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<!-- <header>
-						<h2>Find us on ...</h2>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
-					</header> -->
-					<div class="row">
-						<div class="col-12">
-							<!-- <hr />
-							<h3>Find us on ...</h3> -->
-							<ul class="social">
-								<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li> -->
-								<li><a href="https://github.com/brachiolab" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://debugml.github.io/" class="icon brands fa-blogger"><span class="label">Blogger</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
+				<!-- Contact -->
+				<article id="contact">
 					<footer>
-						<ul id="copyright">
-							<!-- <li>&copy; Brachio Lab. All rights reserved.</li>--> <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
+						<img width="100px" src="images/Footer_Logo.svg"/>
+						<div class="button-container footer">
+							<a href="https://github.com/brachiolab"><button class="button secondary">GitHub</button></a> <a href="https://debugml.github.io/"><button class="button secondary">Blog</button></a> 
+						</div>
+						<div id="copyright">
+							<p>Design: <a href="http://html5up.net">HTML5 UP</a></p>
+							<!-- <li>&copy; Brachio Lab. All rights reserved.</li>-->
+						<div>
 					</footer>
 				</div>
 			</article>

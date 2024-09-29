@@ -1,7 +1,116 @@
 /* Make papers and people the same height */
 #research article, #people section, #datasets article {
 	min-height: 100%;
+	min-width: 100%;
 } 
+
+
+/* Card styling */
+.card-style {
+	background: linear-gradient(to bottom,
+	#E7ECF9 0%,
+	#E7ECF9 30%,
+	#ffffff 30%,
+	#ffffff 100% );
+	border-radius: 5px;
+	border: solid 1px #1A56B018;
+	padding: 0.5rem 1rem 1rem 1rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* Image for each person */
+.portrait {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: solid #E7ECF9 4px;
+	
+}
+
+.portrait img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+
+  }
+
+/* container housing all person's cards*/
+.person-flex-box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	max-width: 1200px;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+/* each person's bio*/
+.person-card {
+	flex: 0 0 12rem;
+	margin-right: 1rem;
+  	margin-bottom: 1rem;
+	justify-items: stretch;
+	text-align: center;
+	
+}
+
+.person-card a {
+	text-decoration: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0 0.3em;
+	margin: 0;
+}
+
+.research-container {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-items: center;
+	color: none;
+	margin-top: 120px;
+}
+
+
+.card-style h4 {
+	margin-top: 0.6rem;
+	margin-bottom: 0.5rem;
+}
+
+.card-style p {
+	font-weight: 600;
+	line-height: 1.6em;
+}
+
+/* each paper description card*/
+.paper-card {
+	margin-bottom: 5px;
+	padding: 0;
+	border-radius: 8px;
+	padding: 1rem 2rem 1rem 2rem;
+	border-radius: 5px;
+	border: solid 1px #1A56B018;
+	background-color: #ffffff;
+	
+}
+
+.paper-card h3 {
+	line-height: normal;
+	margin-bottom: 0.8em;
+}
+
+a.paper-link{
+	font-weight: 700;
+	text-decoration: none;
+}
 
 
 /* news	*/
@@ -72,7 +181,6 @@
 
 	/* Slightly larger navbar */
 	#nav {
-		height: 45px;
 		line-height: 45px;
 	}
 	/* but make sure the font size fits */
@@ -98,6 +206,26 @@
 /* Make links inherit color */
 #research p a, #people p a {
 	color: inherit;
+}
+
+#research {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 14rem;
+}
+#research:before {
+	position: absolute;
+	content: "";
+	border-radius: 2000px 2000px 0 0;
+    z-index: -1; 
+    background-color: #E7ECF9;
+	justify-self: center;
+	width: 160vw;
+    bottom: 0;  
+    right: 0;
+	top: 14rem;
+	left: 0;
 }
 
 .spacer { 

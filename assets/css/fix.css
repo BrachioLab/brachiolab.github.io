@@ -6,6 +6,40 @@ body, input, textarea, select {
     font-size: 13pt;
 }
 
+.thumbnail-container{
+	display: flex;
+	gap: 10px;
+}
+
+.thumbnail-card{
+	border-radius: 5px;
+	border: solid 1px #1A56B018;
+	padding: 0.5rem 1rem 1rem 1rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#nav a:before {
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	bottom: -8px;
+	left: 0.2em;
+	right: 0;
+	content: "";
+	position: absolute;
+	background-color: #b4dd93;
+	width: 0%;
+	height: 4px;
+	border-radius: 5px;
+	margin: auto;
+	justify-self: center;
+
+}
+
+
 
 @media screen and (min-width: 736px) {
 	#datasets.wrapper {
@@ -21,12 +55,17 @@ body, input, textarea, select {
 	}
 }
 
+#intro {
+	padding-top: 10rem;
+	padding-bottom: 2rem;
+}
 
 #datasets {
 
 	.box.style2 h3 {
 		margin-bottom: 0em;
 	}
+
 	article {
 		color: #3E3E3E;
 		/* padding-bottom: 0.75em; */
