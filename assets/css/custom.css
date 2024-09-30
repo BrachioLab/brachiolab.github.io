@@ -1,7 +1,7 @@
 /* Make papers and people the same height */
 #research article, #people section, #datasets article {
-	min-height: 100%;
-	min-width: 100%;
+	height: 100%;
+	width: 100%;
 } 
 
 
@@ -72,11 +72,10 @@
 
 .research-container {
 	display: flex;
-	width: 100%;
 	flex-direction: column;
 	justify-items: center;
 	color: none;
-	margin-top: 120px;
+	margin: 120px 3vw 0 3vw;
 }
 
 
@@ -119,90 +118,6 @@ a.paper-link{
 	line-height: 1.5em;
 }
 
-
-/* Custom font sizing for ipad  */
-@media screen and (max-width: 1280px) {
-
-	/* Re-scale image to match increased font size */
-	#top .image {
-	    width: 20em;
-	    height: 20em;
-	}
-
-	/* Make default font size much larger	*/
-	body, input, textarea, select  {
-		font-size: 14pt;
-	}
-
-	/* Resize welcome header	*/
-	h1 { 
-		font-size: 2.5em;
-	}
-
-	/* Blurb font size	*/
-	#top p {
-		font-size: 1.2em;
-	}
-
-	/* News padding	*/
-	#top section {
-		padding: 1.5em 1em 1.75em 1em;
-	}
-
-	/* News font size	*/
-	#top section p {
-		font-size: 1.0em;
-		line-height: 1.5em;
-	}
-}
-
-
-@media screen and (max-width: 736px) {
-	/* Re-scale image to match increased font size */
-	#top .image {
-	    width: 14em;
-	    height: 14em;
-	}
-
-	/* Resize welcome header	*/
-	h1 { 
-		font-size: 2.2em;
-	}
-
-	/* News font size */
-	#top section p {
-		font-size: 1em;
-	}
-
-	/* Base font size much larger */
-	body, input, textarea, select {
-		font-size: 16pt;
-	}
-
-	/* Slightly larger navbar */
-	#nav {
-		line-height: 45px;
-	}
-	/* but make sure the font size fits */
-	#nav a {
-		font-size: 0.8em;
-	}
-}
-
-
-@media screen and (max-width: 350px) {
-	#top .image {
-	    width: 12em;
-	    height: 12em;
-	}
-
-	#nav a {
-		font-size: 0.6em;
-	}
-
-}
-
-
 /* Make links inherit color */
 #research p a, #people p a {
 	color: inherit;
@@ -213,6 +128,8 @@ a.paper-link{
 	overflow: hidden;
 	width: 100%;
 	padding-bottom: 14rem;
+	display: flex;
+	justify-content: center;
 }
 #research:before {
 	position: absolute;
@@ -224,44 +141,11 @@ a.paper-link{
 	width: 160vw;
     bottom: 0;  
     right: 0;
-	top: 14rem;
+	top: 290px;
 	left: 0;
 }
 
 .spacer { 
 	padding-left:5px;
 	padding-right:5px;
-}
-
-@media screen and (min-width: 980px) {
-	#datasets {
-		.box.style2 .image {
-			position: relative;
-			left: 1em;
-			top: 1em;
-			margin: -2em 0 1.5em -2em;
-			width: auto;
-		}
-		.box {
-			padding: 1em;
-		}
-		/* img {
-			padding: 1.1em;
-		} */
-		/* img {
-			width: 139px;
-		} */
-		article {
-			/* padding: 15px; */
-			/* width: 184px; */
-			/* text-align: center; */
-		}
-		h3 { 
-			font-size: 0.8em;
-			/* margin-left: -15px; */
-			/* text-align: center; */
-			/* min-width: 184px; */
-		}
-		/* padding: 15px; */
-	}
 }
