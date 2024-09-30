@@ -906,6 +906,10 @@ input, select, textarea {
 		.top-image img{
 			max-width: 200px;
 		}
+
+		.top-container {
+			margin: 10px;
+		}
 			
 	}
 
