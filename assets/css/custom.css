@@ -125,7 +125,7 @@ a.paper-link{
 
 #research {
 	position: relative;
-	overflow: hidden;
+	overflow: clip;
 	width: 100%;
 	padding-bottom: 14rem;
 	display: flex;
@@ -140,12 +140,19 @@ a.paper-link{
 	justify-self: center;
 	width: 160vw;
     bottom: 0;  
-    right: 0;
+    right: auto;
 	top: 290px;
-	left: 0;
+	left: auto;
 }
 
 .spacer { 
 	padding-left:5px;
 	padding-right:5px;
+}
+
+#people, #research { 
+	padding-top: 80px;
+}
+#home {
+	padding: 0;
 }
