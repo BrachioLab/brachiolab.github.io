@@ -5,7 +5,7 @@ $.get('/data/papers.yml').done(
 		var $header = $("#research div.container header");
 
 		// var $row = $("<div>", {class: "row aln-center"});
-		var $row = $("<div>", {class: "row"});
+		var $row = $("<div>", {class: "research-container"});
 		for (yid in papers){
 			var papers_by_year = papers[yid]["papers"]
 			for (pid in papers_by_year){
@@ -16,8 +16,8 @@ $.get('/data/papers.yml').done(
 				}
 
 				// console.log(paper)
-				var $div = $("<div>", {class: "col-4 col-6-medium col-12-small"});
-				var $article = $("<article>", {class: "box style1"});
+				var $div = $("<div>");
+				var $article = $("<article>", {class: "paper-card"});
 
 				var link = paper["link"];
 				if (paper["blog"]) {
@@ -38,7 +38,7 @@ $.get('/data/papers.yml').done(
 						$p.append($("<br>"));
 						firstline = false;
 					}
-					$p.append($("<a>", {href: paper["link"]}).text("arxiv"));
+					$p.append($("<a>", {href: paper["link"], class:"paper-link"}).text("arxiv"));
 				}
 				if (paper["blog"]) {
 					if (firstline){
@@ -47,7 +47,7 @@ $.get('/data/papers.yml').done(
 					} else {
 						$p.append($("<span>", {class: "spacer"}).html("&#183;"));
 					}
-					$p.append($("<a>", {href: paper["blog"]}).text("blog"));
+					$p.append($("<a>", {href: paper["blog"], class:"paper-link"}).text("blog"));
 				}
 				if (paper["github"]) {
 					if (firstline){
@@ -56,12 +56,11 @@ $.get('/data/papers.yml').done(
 					} else {
 						$p.append($("<span>", {class: "spacer"}).html("&#183;"));
 					}
-					$p.append($("<a>", {href: paper["github"]}).text("github"));
+					$p.append($("<a>", {href: paper["github"], class:"paper-link"}).text("github"));
 				}
 				// console.log($arxiv)
 				// $p.append($arxiv, $blog, $github);
 				$article.append($p);
-
 				$div.append($article);
 				$row.append($div);
 			}

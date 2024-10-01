@@ -20,246 +20,188 @@
 
 		<!-- Nav -->
 			<nav id="nav">
-				<ul class="container">
-					<li><a href="/#home">Brachio Lab</a></li>
-					<li><a href="/#people">People</a></li>
-					<li><a href="/#research">Research</a></li>
-					<!-- <li><a href="#contact">Contact</a></li> -->
+				<ul class="nav-container">
+					<li><a href="https://brachiolab.github.io/#home">Brachio Lab</a></li>
+					<li><a href="https://brachiolab.github.io/#people">Team</a></li>
+					<li><a href="https://brachiolab.github.io/#research">Research</a></li>
+					<li><a href="https://debugml.github.io/">Blog<img class="inline-icon"src="images/ExternalLink_Icon.svg"/></a></li>
 				</ul>
 			</nav>
 
+			<article id="intro">
+				<div class="top-container">
+						<img class="top-image" src="images/FIX_Logo.svg" alt="FIX Logo" />
+						<div class="top-text">
+							<header>
+								<h1>FIX: <strong>Features </strong> Interpretable to eXperts</h1>
+							</header>
+							<p>
+								A benchmark for extracting features that are interpretable to real-world experts, ranging from doctors performing gall bladder surgery to cosmologists studying supernovae.</p>
+							<div class="button-container">
+								<a href="https://arxiv.org/abs/2409.13684"><button class="button fix">FIX Paper</button></a> <a href="https://github.com/BrachioLab/exlib/tree/main/fix"><button class="button fix">Github</button></a> 
+							</div>
+						</div>
+				</div>
+			</article>
 
-			<article id="datasets" class="wrapper style1">
+			<article id="datasets">
 				<div class="container">
-					<header>
-						<h1>FIX: Features Interpretable to eXperts</h1>
-						<p>A benchmark for extracting features that are interpretable to real-world experts, ranging from doctors performing gall bladder surgery to cosmologists studying supernovae.</p>
-						<!-- <a href="" class="button large scrolly">Paper</a>
-						<a href="https://github.com/brachiolab/exlib" class="button large scrolly">Github</a> -->
-					</header>
-					<div class="row">
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#massmaps';" style="cursor: pointer;">
-								<a href="#massmaps" class="image featured"><img src="images/maps.png" alt=""></a>
-								<h3><a href="#massmaps"><span>Mass Maps</a></h3>
-								<!-- <p>Ornare nulla proin odio consequat.</p> -->
-							</article>
-						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#supernova';" style="cursor: pointer;">
-								<a href="#supernova" class="image featured"><img src="images/supernova.png" alt=""></a>
-								<h3><a href="#supernova">Super&#8203;nova</a></h3>
-								<!-- <p>Ornare nulla proin odio consequat.</p> -->
-							</article>
-						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#polite';" style="cursor: pointer;">
-								<a href="#polite" class="image featured"><img src="images/politeness_cropped.png" alt=""></a>
-								<h3><a href="#polite">Polite&#8203;ness</a></h3>
-								<!-- <p>Ornare nulla proin odio consequat.</p> -->
-							</article>
-						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#emotion';" style="cursor: pointer;">
-								<a href="#emotion" class="image featured"><img src="images/emotions_cropped.png" alt=""></a>
-								<h3><a href="#emotion">Emotion</a></h3>
-								<!-- <p>Ornare nulla proin odio consequat.</p> -->
-							</article>
-						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#chestxray';" style="cursor: pointer;">
-								<a href="#chestxray" class="image featured"><img src="images/chest_gray.png" alt=""></a>
-								<h3><a href="#chestxray">Chest X-Ray</a></h3>
-								<!-- <p>Ornare nulla proin odio consequat.</p> -->
-							</article>
-						</div>
-						<div class="col-2 col-4-medium col-6-small">
-							<article class="box style2" onclick="location.href='#surgery';" style="cursor: pointer;">
-								<a href="#surgery" class="image featured"><img src="images/surgery_blur.png" alt=""></a>
-								<h3><a href="#surgery">Surgery</a></h3>
-								<!-- <p>Ornare nulla proin odio consequat.</p> -->
-							</article>
-						</div>
+					<div class="divider">
+						<hr class = "hr-divider"><img class="icon" src="images/Research_Icon.svg"/><h2 class = "divider-text">Datasets</h2><hr class = "hr-divider">
 					</div>
-					<footer>
-						<p>
-							Scroll down or click a setting to learn more, explore these settings in ready-to-use notebooks, and easily download these datasets from Huggingface to join the search for interpretable features! 
- 							<!-- Access datasets and evaluate your features with 
-							<code>pip install exlib</code> -->
-						</p>
-						<div class="row">
-							<div class="col-6 col-6-medium col-6-small" style="text-align: right;"><a href="https://arxiv.org/abs/2409.13684" class="button large scrolly">FIX Paper</a></div>
-							<div class="col-6 col-6-medium col-6-small" style="text-align: left;"><a href="https://github.com/BrachioLab/exlib/tree/main/fix" class="button large scrolly">Github</a></div>
+					<h3 class="subheader">
+						Scroll down or click a setting to learn more, explore these settings in ready-to-use notebooks, and easily download these datasets from <a href="https://huggingface.co/BrachioLab">Huggingface</a> to join the search for interpretable features! 
+						 <!-- Access datasets and evaluate your features with 
+						<code>pip install exlib</code> -->
+					</h3>
+					<div class="thumbnail-container">
+						<div class="thumbnail-card">
+							<article onclick="location.href='#massmaps';" style="cursor: pointer;">
+								<a href="#massmaps"><img class="thumbnail-image" src="images/maps.png" alt=""></a><h4><a href="#massmaps">Mass Maps</a></h4>
+							</article>
 						</div>
-					</footer>
-				</div>
-			</article>
-			
-			<article id="massmaps" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium center">
-							<span class="image fit"><img src="images/maps_groups.png" alt="" /></span>
+						<div class="thumbnail-card">
+							<article onclick="location.href='#supernova';" style="cursor: pointer;">
+								<a href="#supernova"><img class="thumbnail-image" src="images/supernova.png" alt=""></a>
+								<h4><a href="#supernova">Supernova</a></h4>
+							</article>
 						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Cosmological <strong>Mass Maps</strong></h1>
-							</header>
-							<p>Astronomers seek to use mass maps collected via telescopes to infer cosmological parameters governing the initial state of the universe, such as energy density \((\Omega_m)\) and matter fluctuations \((\sigma_8)\). While deep networks can use cosmological simulations to predict well at this task, explanations thereof can potentially draw attention to new patterns and discoveries if they are understandable to cosmologists. Explanations of mass map predictions that are aligned with cosmological structures (e.g. voids and clusters) can potentially advance our understanding of the formation of the universe.</p>
-							<footer class="button-spacer">
-								<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/mass_maps.ipynb" class="button small scrolly">Try it on Colab</a>
-								<a href="https://huggingface.co/datasets/BrachioLab/massmaps-cosmogrid-100k" class="button small scrolly">Dataset Viewer</a>
-							</footer>
+						<div class="thumbnail-card">
+							<article onclick="location.href='#polite';" style="cursor: pointer;">
+								<a href="#polite"><img class="thumbnail-image" src="images/politeness_cropped.png" alt=""></a>
+								<h4><a href="#polite">Politeness</a></h4>							</article>
 						</div>
-					</div>
-				</div>
-			</article>
-			<article id="supernova" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium center">
-							<span class="image fit"><img src="images/supernova_groups.png" alt="" /></span>
+						<div class="thumbnail-card">
+							<article onclick="location.href='#emotion';" style="cursor: pointer;">
+								<a href="#emotion"><img class="thumbnail-image" src="images/emotions_cropped.png" alt=""></a>
+								<h4><a href="#emotion">Emotion</a></h4>
+							</article>
 						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1><strong>Supernova</strong> Identification</h1>
-							</header>
-							<p>The Legacy Survey of Space and Time uses telescopes to search the universe for rare and new astronomical phenomena, such as exploding supernova. Given the size of the universe and the limited view of a telescope, observation schedules need to focus on periods of activity that correspond to astronomical activity to not squander telescope resources. While deep learning models can accurately classify supernova from light observations, aligning explanations with wavelength structures can potentially help astrophysicists in characterizing new and different supernova. </p>
-							<footer class="button-spacer">
-								<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/supernova.ipynb" class="button small scrolly">Try it on Colab</a>
-								<a href="https://huggingface.co/datasets/BrachioLab/supernova-timeseries" class="button small scrolly">Dataset Viewer</a>
-							</footer>
+						<div class="thumbnail-card">
+							<article onclick="location.href='#chestxray';" style="cursor: pointer;">
+								<a href="#chestxray"><img class="thumbnail-image" src="images/chest_gray.png" alt=""></a>
+								<h4><a href="#chestxray">Chest X-Ray</a></h4>
+							</article>
+						</div>
+						<div class="thumbnail-card">
+							<article onclick="location.href='#surgery';" style="cursor: pointer;">
+								<a href="#surgery"><img class="thumbnail-image" src="images/surgery_groups.png" alt=""></a>
+								<h4><a href="#surgery">Surgery</a></h4>
+								
+							</article>
 						</div>
 					</div>
 				</div>
 			</article>
 
-			<article id="polite" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium center">
-							<span class="image fit"><img src="images/politeness_groups.png" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Multilingual <strong>Politeness</strong></h1>
-							</header>
-							<p>Why are certain phrases polite in one language and rude in another? Understanding the nuances of politeness across languages can aid in cross-cultural understanding and communication. To this end, communication and psychology research has identified multilingual lexical categories that can capture different aspects of politeness. Aligning explanations of politeness with lexical categories that are common across different languages can help people from different backgrounds understand each other.</p>
-							<footer class="button-spacer"> 
-								<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/multilingual_politeness.ipynb" class="button small scrolly">Try it on Colab</a>
-								<a href="https://huggingface.co/datasets/BrachioLab/multilingual_politeness" class="button small scrolly">Dataset Viewer</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-			</article>
-			<article id="emotion" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium center">
-							<span class="image fit"><img src="images/emotions_groups.png" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1><strong>Emotion</strong> detection</h1>
-							</header>
-							<p>Understanding the emotion behind language is a critical component of systems like chatbots that interact with human users. Psychology researchers traditionally explain emotion via the <em>circumplex model of affect</em>, which quantifies emotion with respect to two axes of arousal (i.e. magnitude of intensity) and valence (how negative or positive). Explanations for emotions in language that are aligned with the circumplex model can help guide systems towards more empathetic and adaptable interactions with people.</p>
-							<footer class="button-spacer">
-								<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/emotion.ipynb" class="button small scrolly">Try it on Colab</a>
-								<a href="https://huggingface.co/datasets/BrachioLab/emotion" class="button small scrolly">Dataset Viewer</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-			</article>
-			
-			<article id="chestxray" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium center">
-							<span class="image fit"><img src="images/chest_groups.png" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1><strong>Chest X-Ray</strong> Pathologies</h1>
-							</header>
-							<p>Medical imaging is a widely used tool for diagnosing problems in the chest. These X-ray images provide doctors with a view into the internal structures and organs, from which diagnoses are made. While deep learning models have seen success in predicting from raw X-ray data, aligning explanations of pathology predictions with bone structures and organs can help doctors better understand the resulting diagnosis.</p>
-							<footer class="button-spacer">
-								<!-- <h3>
-									<a href="" class="">Try it on Colab</a> or
-									<a href="https://huggingface.co/datasets/BrachioLab/chestx" class=""> view the data on HuggingFace</a>
-								</h3> -->
-								<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/chestx.ipynb" class="button small scrolly">Try it on Colab</a>
-								<a href="https://huggingface.co/datasets/BrachioLab/chestx" class="button small scrolly">Dataset Viewer</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-			</article>
-			<article id="surgery" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium center">
-							<span class="image fit"><img src="images/surgery_groups.png" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Cholecystectomy <strong>Surgery</strong></h1>
-							</header>
-							<p>Cholecystectomy surgey, otherwise known as gallbladder removal, is one of the most common elective abdominal surgeries in the US. AI assistants can potentially identify safe/unsafe regions, which can reduce the risk of major complications like bile duct injuries that cost the US healthcare system $1B annually. To effectively communicate with surgeons, explanations of safety need to aligned with anatomical structures that surgeons use to judge safety (i.e. the <em>critical view of safety</em>). </p>
-							<footer class="button-spacer">
-								<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/cholec.ipynb" class="button small scrolly">Try it on Colab</a>
-								<a href="https://huggingface.co/datasets/BrachioLab/cholecystectomy" class="button small scrolly">Dataset Viewer</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-			</article>
-			
+				<div class="dataset-card-container">
 
-			
+					<article id="massmaps">
+						<div class="top-container">
+								<img class="dataset-image" src="images/maps.png" alt="Mass Images" />
+								<div class="top-text">
+									<header>
+										<h1>Cosmological <strong>Mass Maps</strong></h1>
+									</header>
+									<p>Astronomers seek to use mass maps collected via telescopes to infer cosmological parameters governing the initial state of the universe, such as energy density \((\Omega_m)\) and matter fluctuations \((\sigma_8)\). While deep networks can use cosmological simulations to predict well at this task, explanations thereof can potentially draw attention to new patterns and discoveries if they are understandable to cosmologists. Explanations of mass map predictions that are aligned with cosmological structures (e.g. voids and clusters) can potentially advance our understanding of the formation of the universe.</p>
+									<div class="button-container">
+										<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/mass_maps.ipynb"><button class="button fix">Try it on Colab</button></a> <a href="https://huggingface.co/datasets/BrachioLab/massmaps-cosmogrid-100k"><button class="button fix">View Dataset 🤗</button></a> 
+									</div>
+								</div>
+							</div>
+					</article>
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<!-- <header>
-						<h2>Find us on ...</h2>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
-					</header> -->
-					<div class="row">
-						<div class="col-12">
-							<!-- <hr />
-							<h3>Find us on ...</h3> -->
-							<ul class="social">
-								<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li> -->
-								<li><a href="https://github.com/brachiolab" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://debugml.github.io/" class="icon brands fa-blogger"><span class="label">Blogger</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
+					<article id="supernova">
+						<div class="top-container">
+							<img class="dataset-image" src="images/supernova.png" alt="Supernova" />
+							<div class="top-text">
+								<header>
+									<h1><strong>Supernova </strong>Identification</h1>
+								</header>
+								<p>The Legacy Survey of Space and Time uses telescopes to search the universe for rare and new astronomical phenomena, such as exploding supernova. Given the size of the universe and the limited view of a telescope, observation schedules need to focus on periods of activity that correspond to astronomical activity to not squander telescope resources. While deep learning models can accurately classify supernova from light observations, aligning explanations with wavelength structures can potentially help astrophysicists in characterizing new and different supernova.</p>
+								<div class="button-container">
+									<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/supernova.ipynb"><button class="button fix">Try it on Colab</button></a> <a href="https://huggingface.co/datasets/BrachioLab/supernova-timeseries"><button class="button fix">View Dataset 🤗</button></a> 
+								</div>
+							</div>
 						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<!-- <li>&copy; Brachio Lab. All rights reserved.</li>--> <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+					</article>
+
+
+					<article id="polite">
+						<div class="top-container">
+								<img class="dataset-image" src="images/politeness.png" alt="Politeness image" />
+								<div class="top-text">
+									<header>
+										<h1>Multilingual <strong>Politeness</strong></h1>
+									</header>
+									<p>Why are certain phrases polite in one language and rude in another? Understanding the nuances of politeness across languages can aid in cross-cultural understanding and communication. To this end, communication and psychology research has identified multilingual lexical categories that can capture different aspects of politeness. Aligning explanations of politeness with lexical categories that are common across different languages can help people from different backgrounds understand each other.</p>
+									<div class="button-container">
+										<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/multilingual_politeness.ipynb"><button class="button fix">Try it on Colab</button></a> <a href="https://huggingface.co/datasets/BrachioLab/multilingual_politeness"><button class="button fix">View Dataset 🤗</button></a> 
+									</div>
+								</div>
+						</div>
+					</article>
+
+					<article id="emotion">
+						<div class="top-container">
+								<img class="dataset-image" src="images/emotions_cropped.png" alt="Emotion Groups Image" />
+								<div class="top-text">
+									<header>
+										<h1><strong>Emotion</strong> Detection</h1>
+									</header>
+									<p>Understanding the emotion behind language is a critical component of systems like chatbots that interact with human users. Psychology researchers traditionally explain emotion via the circumplex model of affect, which quantifies emotion with respect to two axes of arousal (i.e. magnitude of intensity) and valence (how negative or positive). Explanations for emotions in language that are aligned with the circumplex model can help guide systems towards more empathetic and adaptable interactions with people.</p>
+									<div class="button-container">
+										<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/emotion.ipynb"><button class="button fix">Try it on Colab</button></a> <a href="https://huggingface.co/datasets/BrachioLab/emotion"><button class="button fix">View Dataset 🤗</button></a> 
+									</div>
+								</div>
+						</div>
+					</article>
+					
+					<article id="chestxray">
+						<div class="top-container">
+								<img class="dataset-image" src="images/chest_gray.png" alt="Chest X-Ray image" />
+								<div class="top-text">
+									<header>
+										<h1><strong>Chest X-Ray </strong>Pathologies</h1>
+									</header>
+									<p>Medical imaging is a widely used tool for diagnosing problems in the chest. These X-ray images provide doctors with a view into the internal structures and organs, from which diagnoses are made. While deep learning models have seen success in predicting from raw X-ray data, aligning explanations of pathology predictions with bone structures and organs can help doctors better understand the resulting diagnosis.
+									</p>
+									<div class="button-container">
+										<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/chestx.ipynb"><button class="button fix">Try it on Colab</button></a> <a href="https://huggingface.co/datasets/BrachioLab/chestx"><button class="button fix">View Dataset 🤗</button></a> 
+									</div>
+								</div>
+						</div>
+					</article>
+
+					<article id="surgery">
+						<div class="top-container">
+								<img class="dataset-image" src="images/surgery_groups.png" alt="Surgery image" />
+								<div class="top-text">
+									<header>
+										<h1 class="hyphens: manual;"><strong>Cholecys&shy;tectomy </strong>Surgery</h1>
+									</header>
+									<p>Cholecystectomy surgey, otherwise known as gallbladder removal, is one of the most common elective abdominal surgeries in the US. AI assistants can potentially identify safe/unsafe regions, which can reduce the risk of major complications like bile duct injuries that cost the US healthcare system $1B annually. To effectively communicate with surgeons, explanations of safety need to aligned with anatomical structures that surgeons use to judge safety (i.e. the critical view of safety).</p>
+									<div class="button-container">
+										<a href="https://githubtocolab.com/BrachioLab/exlib/blob/main/notebooks/fix/cholec.ipynb"><button class="button fix">Try it on Colab</button></a> <a href="https://huggingface.co/datasets/BrachioLab/cholecystectomy"><button class="button fix">View Dataset 🤗</button></a> 
+									</div>
+								</div>
+						</div>
+					</article>
+
 				</div>
+
+				<!-- Contact -->
+			<article id="contact">
+				<footer>
+					<img width="100px" src="images/Footer_Logo.svg"/>
+					<div class="button-container footer">
+						<a href="https://github.com/brachiolab"><button class="button secondary">GitHub</button></a> <a href="https://debugml.github.io/"><button class="button secondary">Blog</button></a> 
+					</div>
+					<div id="copyright">
+						<p>Design: <a href="http://html5up.net">HTML5 UP</a></p>
+						<!-- <li>&copy; Brachio Lab. All rights reserved.</li>-->
+					<div>
+				</footer>
 			</article>
 
 		<!-- Scripts -->
