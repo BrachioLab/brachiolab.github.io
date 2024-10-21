@@ -40,6 +40,15 @@ $.get('/data/papers.yml').done(
 					}
 					$p.append($("<a>", {href: paper["link"], class:"paper-link"}).text("arxiv"));
 				}
+				if (paper["website"]) {
+					if (firstline){
+						$p.append($("<br>"));
+						firstline = false;
+					} else {
+						$p.append($("<span>", {class: "spacer"}).html("&#183;"));
+					}
+					$p.append($("<a>", {href: paper["website"], class:"paper-link"}).text("website"));
+				}
 				if (paper["blog"]) {
 					if (firstline){
 						$p.append($("<br>"));
