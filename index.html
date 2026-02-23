@@ -11,6 +11,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
+
+		<!-- Gallery Section: lightGallery CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css" />
+		<link rel="stylesheet" href="assets/css/gallery.css" />
+		<!-- End Gallery Section: lightGallery CDN -->
 	</head>
 	<body class="is-preload">
 		
@@ -44,7 +49,57 @@
 				</div>
 		</article>
 
-		<!-- Work -->
+		<!-- Gallery Section: Start -->
+		<article id="gallery">
+			<div class="container">
+				<header class="nav-bar-spacer">
+					<div class="divider">
+						<hr class="hr-divider"><img class="icon" src="assets/img/Team_Icon.svg"/><h2 class="divider-text">Gallery</h2><hr class="hr-divider">
+					</div>
+				</header>
+				<div id="photo-gallery">
+					<a href="assets/img/gallery/bowling.png">
+						<img src="assets/img/gallery/thumbs/bowling.png" alt="Bowling" />
+					</a>
+					<a href="assets/img/gallery/conference.jpg">
+						<img src="assets/img/gallery/thumbs/conference.jpg" alt="Conference" />
+					</a>
+					<a href="assets/img/gallery/hats.jpg">
+						<img src="assets/img/gallery/thumbs/hats.jpg" alt="Hats" />
+					</a>
+					<a href="assets/img/gallery/hiking.jpeg">
+						<img src="assets/img/gallery/thumbs/hiking.jpeg" alt="Hiking" />
+					</a>
+					<a href="assets/img/gallery/pottery.png">
+						<img src="assets/img/gallery/thumbs/pottery.png" alt="Pottery" />
+					</a>
+					<a href="assets/img/gallery/puppy.jpg">
+						<img src="assets/img/gallery/thumbs/puppy.jpg" alt="Puppy" />
+					</a>
+				</div>
+			</div>
+		</article>
+		<!-- Gallery Section: lightGallery JS -->
+		<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+		<!-- Gallery Section: Initialization -->
+		<script>
+			var galleryInstance = lightGallery(document.getElementById('photo-gallery'), {
+				plugins: [lgZoom, lgThumbnail],
+				speed: 500,
+				thumbnail: true,
+				licenseKey: '0000-0000-000-0000'
+			});
+			document.getElementById('nav').addEventListener('click', function() {
+				if (galleryInstance.lgOpened) {
+					galleryInstance.closeGallery();
+				}
+			});
+		</script>
+		<!-- Gallery Section: End -->
+
+	<!-- Work -->
 		<article id="people">
 			<div class="container">
 				<header class="nav-bar-spacer">
@@ -108,7 +163,7 @@
 			<script src="assets/js/people.js"></script>
 			<script src="assets/js/papers.js"></script>
 
-			<!-- Tracking -->
+		<!-- Tracking -->
 			<!-- Google tag (gtag.js) -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMJ5YECYBM"></script>
 			<script>

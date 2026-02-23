@@ -1,0 +1,92 @@
+/* Gallery Section Styles */
+
+#gallery {
+	padding-top: 80px;
+}
+
+#photo-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	max-width: 1200px;
+	margin: 3rem auto;
+	padding: 0 2rem;
+}
+
+#photo-gallery a {
+	display: block;
+	border-radius: 8px;
+	overflow: hidden;
+	border: solid 1px #1A56B018;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#photo-gallery a:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#photo-gallery img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+}
+
+/* Reset site's global button styles inside lightGallery lightbox.
+   main.css sets button:active { top: 3px } which moves the absolutely-positioned
+   arrow buttons away from the cursor mid-click, preventing the click event. */
+.lg-container button {
+	overflow: visible;
+	font-family: lg !important;
+	font-weight: normal;
+	max-width: none;
+	border-radius: 2px;
+	top: auto;
+}
+
+.lg-container .lg-prev,
+.lg-container .lg-next {
+	top: 50%;
+}
+
+.lg-container button:hover,
+.lg-container button:active {
+	background-color: transparent;
+	color: inherit;
+	box-shadow: none;
+}
+
+.lg-container .lg-prev:hover,
+.lg-container .lg-next:hover,
+.lg-container .lg-prev:active,
+.lg-container .lg-next:active {
+	top: 50%;
+}
+
+@media screen and (max-width: 980px) {
+	#photo-gallery {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 736px) {
+	#photo-gallery {
+		padding: 0 10px;
+	}
+
+	#photo-gallery img {
+		height: 150px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#photo-gallery {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.5rem;
+	}
+
+	#photo-gallery img {
+		height: 120px;
+	}
+}
